@@ -4,7 +4,7 @@ function Project() {
   return (
     <div
       id="project"
-      className="min-h-screen sm:mt-14 w-full 
+      className="min-h-screen mt-20 xl:mt-0 lg:mt-0 w-full 
     flex flex-col items-center justify-center gap-20
     p-10 md:p-16 lg:px-36 lg:py-16 "
     >

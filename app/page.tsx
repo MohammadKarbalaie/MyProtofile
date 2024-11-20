@@ -15,7 +15,7 @@ export default function Home() {
       >
         <img
           src={"Profile.jpg"}
-          className="w-[250px] 
+          className="w-[250px] h-[235px] 
               sm:w[300px] rounded-full"
         />
         <div className="space-y-1 sm:space-y-3">

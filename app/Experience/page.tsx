@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="flex sm:mt-12 min-h-screen
+      className="flex mt-20 xl:mt-0 lg:mt-0 min-h-screen
     w-full flex-col items-center justify-center gap-20
     p-14 md:p-16 lg:py-16 lg:px-36"
     >

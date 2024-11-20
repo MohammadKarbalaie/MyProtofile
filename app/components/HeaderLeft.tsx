@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { BiBriefcase, BiCode, BiHome, BiMailSend, BiRightArrowAlt } from "react-icons/bi";
+import {
+  BiBriefcase,
+  BiCode,
+  BiHome,
+  BiMailSend,
+  BiRightArrowAlt,
+} from "react-icons/bi";
 import { FaSun, FaMoon } from "react-icons/fa";
+
 
 const HeaderLeft = () => {
   const [theme, setTheme] = useState("light");
@@ -105,68 +112,58 @@ const HeaderLeft = () => {
             </li>
           ))}
         </ul>
+        <div className="absolute bottom-2 left-1 w-full">
+          <p
+            className="flex items-center justify-center
+    py-2 px-4 text-sm md:text-base lg:text-lg xl:text-xl font-light"
+          >
+            Copyright &copy; 2024
+          </p>
+        </div>
       </div>
       <div
         className={`fixed left-0 right-0 top-0 z-10
-        flex justify-evenly p-5 md:hidden
-        ${theme === "dark" ? "bg-white text-black" : "bg-teal-600 text-white"}`}
+  flex justify-evenly p-5 md:hidden
+  ${theme === "dark" ? "bg-white text-black" : "bg-teal-600 text-white"}`}
       >
-               <div className="absolute top-5 left-0 rotate-90">
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              checked={theme === "dark"}
-              onChange={toggleTheme}
-              className="sr-only peer"
-            />
-            <div
-              className="w-11 h-6 py-4 px-8 bg-gray-200 rounded-full peer-checked:bg-gray-800 
-              peer-focus:ring-2 peer-focus:ring-teal-500 dark:peer-focus:ring-teal-300
-              peer relative transition-colors duration-300"
-            >
-              <div
-                className={`absolute top-0.5 left-0.5 w-7 h-7 rounded-full bg-white
-                transform transition-transform duration-300 ${
-                  theme === "dark" ? "translate-x-8" : ""
-                }`}
-              >
-                {theme === "light" ? (
-                  <FaSun className="text-yellow-500 mx-auto mt-[7px]" />
-                ) : (
-                  <FaMoon className="text-gray-600 mx-auto mt-[7px]" />
-                )}
-              </div>
-            </div>
-          </label>
-        </div>
-        <Link
-          href="/"
-          className="flex flex-col
-          items-center justify-center"
+        <button
+          onClick={toggleTheme}
+          className={`-ml-5 flex items-center justify-center w-10 h-10 rounded-full
+    ${
+      theme === "dark"
+        ? "bg-gray-800 text-yellow-500"
+        : "bg-gray-200 text-gray-600"
+    } 
+    shadow-md transition-colors duration-300`}
         >
+          {theme === "dark" ? (
+            <FaMoon className="text-xl" />
+          ) : (
+            <FaSun className="text-xl" />
+          )}
+        </button>
+
+        <Link href="/" className="flex flex-col items-center justify-center">
           <BiHome className="text-2xl" />
           <span className="text-xs">Home</span>
         </Link>
         <Link
           href="../Experience"
-          className="flex flex-col
-          items-center justify-center"
+          className="flex flex-col items-center justify-center"
         >
           <BiBriefcase className="text-2xl" />
           <span className="text-xs">Experience</span>
         </Link>
         <Link
           href="../Project"
-          className="flex flex-col
-          items-center justify-center"
+          className="flex flex-col items-center justify-center"
         >
           <BiCode className="text-2xl" />
           <span className="text-xs">Project</span>
         </Link>
         <Link
           href="../Contact"
-          className="flex flex-col
-          items-center justify-center"
+          className="flex flex-col items-center justify-center"
         >
           <BiMailSend className="text-2xl" />
           <span className="text-xs">Contact</span>
