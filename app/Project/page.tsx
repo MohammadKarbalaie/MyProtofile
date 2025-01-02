@@ -12,13 +12,14 @@ function Project() {
         className="text-center text-5xl 
       font-light"
       >
-        Project
+        Projects
       </h1>
 
       <div
         className="grid grid-cols-1 lg:grid-cols-2
       xl:grid-cols-3 gap-5"
       >
+        {/* Project 1 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -29,22 +30,22 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            Task Management App
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: React.js, Tailwind CSS
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            A simple task management app to organize daily tasks. It features
+            task creation, marking tasks as completed, and a user-friendly UI.
+            Built to improve React.js skills and understand state management.
           </p>
         </div>
 
+        {/* Project 2 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -55,22 +56,22 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            Portfolio Website
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: HTML, CSS, JavaScript
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            Designed and developed a personal portfolio website to showcase
+            projects and skills. Focused on responsive design and cross-browser
+            compatibility.
           </p>
         </div>
 
+        {/* Project 3 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -81,22 +82,22 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            Weather App
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: React.js, OpenWeather API
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            Created a weather app that fetches real-time weather data using the
+            OpenWeather API. Learned about API integration and asynchronous
+            programming.
           </p>
         </div>
 
+        {/* Project 4 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -107,22 +108,22 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            E-Commerce Landing Page
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: Next.js, Tailwind CSS
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            Built a responsive e-commerce landing page with dynamic product
+            sections. Gained hands-on experience with Next.js features like
+            routing and server-side rendering.
           </p>
         </div>
 
+        {/* Project 5 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -133,22 +134,22 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            Expense Tracker
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: JavaScript, LocalStorage
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            A basic expense tracker that allows users to add, delete, and view
+            expenses. Built to understand DOM manipulation and JavaScript
+            concepts.
           </p>
         </div>
 
+        {/* Project 6 */}
         <div
           className="text-left space-y-2 border-2
           hover:scale-105 transition-all duration-200
@@ -159,19 +160,18 @@ function Project() {
             className="text-3xl 
               font-semibold"
           >
-            Project
+            Blog CMS
           </h1>
           <h3
             className="text-xl text-gray-700
               "
           >
-            Teach Stack
+            Tech Stack: React.js, Firebase
           </h3>
-          <p className="text-sm text-gray-600">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quibusdam
-            quia, suscipit voluptas voluptas
-            cupiditate sed placeat atque voluptas
-            Voluptatem harum vero.
+          <p className="text-sm text-gray-600">
+            Developed a simple blog content management system where users can
+            create, edit, and delete posts. Leveraged Firebase for authentication
+            and database storage.
           </p>
         </div>
       </div>
